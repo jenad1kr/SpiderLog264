@@ -17,41 +17,49 @@ Access to Spider resources
     + Header
         
             Authorization: Basic dXNlcjpwYXNzd29yZA==
+            x-api-version: 1.0
 
 + Response 200 (application/json)
+    
+    + Header
+        
+            ETag: "euyfewuysdfsdf"
+            cach-control: max-age=600
 
-        {
-            "page" :
+    + Body
+    
             {
-                "number" : 1,
-                "size" : 10,
-                "totalPages" : 20
-            },
-            "spiders" :
-            [
+                "page" :
                 {
-                    "sightedAt" : "2015-08-29T19:30",
-                    "imageUrl" : "uid:34225/4699046e5d_z.jpg",
-                    "description" : "Spider I saw at home",
-                    "tags" : [
-                        "big"
-                    ]
+                    "number" : 1,
+                    "size" : 10,
+                    "totalPages" : 20
                 },
-                {
-                    "sightedAt" : "2015-08-21T19:30",
-                    "imageUrl" : "uid:34225/4699046e5e_z.jpg",
-                    "description" : "Spider I saw at office",
-                    "tags" : [
-                        "scary"
-                    ]
-                },
-                {
-                    "sightedAt" : "2015-05-23T19:30",
-                    "imageUrl" : "uid:34225/4699046e5r_z.jpg",
-                    "description" : "Spider I saw at beach",
-                    "tags" : [
-                        "sandy"
-                    ]
-                }
-            ]
-        }
+                "spiders" :
+                [
+                    {
+                        "sightedAt" : "2015-08-29T19:30",
+                        "imageUrl" : "uid:34225/4699046e5d_z.jpg",
+                        "description" : "Spider I saw at home",
+                        "tags" : [
+                            "big"
+                        ]
+                    },
+                    {
+                        "sightedAt" : "2015-08-21T19:30",
+                        "imageUrl" : "uid:34225/4699046e5e_z.jpg",
+                        "description" : "Spider I saw at office",
+                        "tags" : [
+                            "scary"
+                        ]
+                    },
+                    {
+                        "sightedAt" : "2015-05-23T19:30",
+                        "imageUrl" : "uid:34225/4699046e5r_z.jpg",
+                        "description" : "Spider I saw at beach",
+                        "tags" : [
+                            "sandy"
+                        ]
+                    }
+                ]
+            }
